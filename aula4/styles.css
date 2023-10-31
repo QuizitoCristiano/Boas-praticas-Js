@@ -1,0 +1,99 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&family=Roboto:wght@500&display=swap');
+
+* {
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  background: rgb(5, 5, 5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.container {
+background: rgb(236, 230, 230);
+  width: 500px;
+  height: auto;
+  border-radius: 10px;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 2rem;
+  gap: 5rem;
+}
+
+.wrapper {
+  /* background: rgb(106, 102, 102); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.wrapper div {
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+.wrapper button {
+  border: none;
+  outline: none;
+  color: white;
+  background: rgb(231, 88, 45);
+  font-size: 1.4rem;
+  height: 45px;
+  width: 105px;
+  transition: all 0.52s;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover {
+    background: rgb(236, 45, 7);
+}
+
+.display {
+  height: 45px;
+  width: 100%;
+  text-align: right;
+  font-size: 2rem;
+  border-radius: 5px;
+  font-weight: 800;
+  padding-left: 8px;
+  border: none;
+  outline: none;
+  border: 2px solid rgb(50, 46, 45);
+}
+
+.wrapperChild {
+    /* background: red !important; */
+    margin-top: 0.4rem;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .container  {
+      width: 97%;
+      height: 60vh;
+      margin-top: 3rem;
+      padding: 0.5rem;
+      gap: 2rem;
+    }
+
+    .wrapper button {
+        height: 45px;
+        width: 80px;
+       
+      }
+  }
+  
