@@ -93,14 +93,84 @@
 
 
 
-const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 8, 7, 11, 15, 22, 27];
+// const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 8, 7, 11, 15, 22, 27];
 
-const valorTotal = numeros.reduce(function(acumulador, valor, indice, array) {
-    // acumulador += valor
-    // if(valor % 2 === 0) acumulador.push(valor)
-    acumulador.push(valor * 4)
+// const valorTotal = numeros.reduce(function(acumulador, valor) {
+//     // acumulador += valor
 
-    return acumulador;
+//     // if(valor % 2 === 0) acumulador.push(valor)
+//     // acumulador.push(valor * 4)
 
-}, []);
-console.log(valorTotal);
+//     if(valor % 2 === 0){
+//         acumulador += valor
+//     }
+
+//     return acumulador;
+
+// });
+// console.log(valorTotal);
+
+
+
+
+// const pessoas = [
+//     { nome: "Luis", idade: 20 },
+//     { nome: "Mariana", idade: 30 },
+//     { nome: "Lisania", idade: 27 },
+//     { nome: "Mariasa", idade: 40 },
+//     { nome: "Jóse", idade: 18 },
+//     { nome: "Pedro", idade: 53 },
+//     { nome: "Nelisa", idade: 73 },
+//     { nome: "Felisberto", idade: 33 },
+// ];
+
+// const maisVelha = pessoas.reduce(function(acumulador, valor){
+//  if(acumulador.idade > valor.idade) return acumulador;
+//     return valor;
+ 
+// });
+
+// console.log(maisVelha)
+
+
+
+// .filter,   .map, .reduce
+ 
+
+// const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 8, 7, 11, 15, 22, 27];
+
+// const totalNumerosPares = numeros.filter((valor) =>{
+//    return valor % 2 === 0;
+
+ 
+// }).map(function(valor){
+//     return valor * 2;
+// }).reduce(function(acumulador, valor) {
+//   return acumulador + valor;
+// })
+
+
+
+// console.log(totalNumerosPares);
+
+// const numeros = [5, 50, 80, 1, 2, 3, 4, 5, 8, 7, 11, 15, 22, 27];
+
+// const numerosPares = numeros
+//     .filter(valor = valor % 2 === 0)
+//     .map(valor => valor * 2)
+//     .reduce((ac, valor) => ac + valor);
+    
+
+//     console.log(numerosPares);
+
+
+
+// fetch
+
+const numeros = [10, 20, 30, 40, 50];
+let total = 0
+numeros.forEach(valor => {
+    total += valor
+});
+ 
+console.log(total);
