@@ -190,3 +190,5 @@ produto1.aumento(5);
 produto2.desconto(2);
 
 console.log(produto1, produto2);
+
+// 

@@ -189,24 +189,62 @@
 // }
 
 
-function mostrarHora() {
-  let data = new Date();
+// function mostrarHora() {
+//   let data = new Date();
 
-  return data.toLocaleTimeString('pt-BR', {
-    hour12: false
-  });
+//   return data.toLocaleTimeString('pt-BR', {
+//     hour12: false
+//   });
+// }
+
+// const time = setInterval(function(){
+//   console.log(mostrarHora());
+// }, 1000);
+
+// setTimeout(function(){
+//   clearInterval(time);
+// });
+
+// setTimeout(function(){
+//   console.log('Olá mundo!');
+// }, 5000);
+
+
+function Produto(nome, preco) {
+  this.nome = nome;
+  this.preco = preco;
 }
 
-const time = setInterval(function(){
-  console.log(mostrarHora());
-}, 1000);
+Produto.prototype.aumento = function(quantia){
+  this.preco += quantia;
+}
 
-setTimeout(function(){
-  clearInterval(time);
-});
+Produto.prototype.desconto = function(quantia){
+  this.desconto -= quantia;
+}
 
-setTimeout(function(){
-  console.log('Olá mundo!');
-}, 5000);
+function Camiseta(nome, preco, cor, material){
+  Produto.call(this, nome, preco);
+  this.cor = cor;
+  this.material = material;
+}
+
+Camiseta.prototype = Object.create(Produto.prototype);
+Camiseta.prototype.constructor = Camiseta
 
 
+const produto1 = new Camiseta('Blusa', 22.90, 'Verde', 'Algodão');
+const produto3 = new Camiseta('Cropped', 34.99, 'Brango', 'Algodão');
+const produto2 = new Produto('Caneca', 50);
+
+
+
+
+
+// Exemplo de uso dos métodos
+
+
+produto2.desconto(5);
+produto3.desconto(10);
+
+console.log(produto1, produto2, produto3);
