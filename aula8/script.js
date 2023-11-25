@@ -6,7 +6,7 @@ const resSaque = document.querySelector('.resSaque')
 const botaoSacar = document.querySelector('.botaoSacar');
 const botaoDepositar = document.querySelector('.botaoDepositar');
 
-const conta1 = new Conta(11, 22, 10);
+const conta1 = new Conta(11, 22, 0);
 
 botaoDepositar.addEventListener('click', function () {
     const valorDepositar = parseFloat(myInputDepositar.value);
@@ -15,6 +15,7 @@ botaoDepositar.addEventListener('click', function () {
     } else {
         resutdato.textContent = 'Digite um valor válido para depositar.';
     }
+    return;
 });
 
 botaoSacar.addEventListener('click', function () {
