@@ -59,11 +59,37 @@ function esperaAi(msg, tempo) {
   });
 }
 
-esperaAi("Todo deu carto..", crisNumeroAternativo())
-.then((valor) => {
-  console.log(valor);
-  return esperaAi('Opa!! a frese dois deu boa beleza', crisNumeroAternativo())
-}).then(valor => {
-    console.log(valor);
-})
-.catch(e => console.log(e));
+// esperaAi("Todo deu carto..", crisNumeroAternativo())
+// .then((valor) => {
+//   console.log(valor);
+//   return esperaAi('Opa!! a frese dois deu boa beleza', crisNumeroAternativo())
+// }).then(valor => {
+//     console.log(valor);
+// })
+// .catch(e => console.log(e));
+
+async function executa() {
+  try {
+    const Frase1 = await esperaAi(
+      "Você está executando a frse 1",
+      crisNumeroAternativo()
+    );
+    console.log(Frase1);
+
+    const frese2 = await esperaAi(
+      "Opa!! a frese dois deu boa beleza",
+      crisNumeroAternativo()
+    );
+    console.log(frese2);
+    const frese3 = await esperaAi(
+      "Opa!! a frese 3 deu boa beleza",
+      crisNumeroAternativo()
+    );
+    console.log(frese3);
+    
+  } catch (e) {
+    console.log(e);
+  }
+}
+
+executa();
