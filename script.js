@@ -189,24 +189,34 @@
 // }
 
 
-function mostrarHora() {
-  let data = new Date();
+// function mostrarHora() {
+//   let data = new Date();
 
-  return data.toLocaleTimeString('pt-BR', {
-    hour12: false
-  });
+//   return data.toLocaleTimeString('pt-BR', {
+//     hour12: false
+//   });
+// }
+
+// const time = setInterval(function(){
+//   console.log(mostrarHora());
+// }, 1000);
+
+// setTimeout(function(){
+//   clearInterval(time);
+// });
+
+// setTimeout(function(){
+//   console.log('Olá mundo!');
+// }, 5000);
+
+
+function recursiva(max) {
+  if(max >= 10) return;
+
+  max++;
+
+console.log(max);
+recursiva(max);
 }
 
-const time = setInterval(function(){
-  console.log(mostrarHora());
-}, 1000);
-
-setTimeout(function(){
-  clearInterval(time);
-});
-
-setTimeout(function(){
-  console.log('Olá mundo!');
-}, 5000);
-
-
+recursiva(0)
