@@ -196,6 +196,20 @@
 //     hour12: false
 //   });
 // }
+<<<<<<< HEAD:script.js
+
+// const time = setInterval(function(){
+//   console.log(mostrarHora());
+// }, 1000);
+
+// setTimeout(function(){
+//   clearInterval(time);
+// });
+
+// setTimeout(function(){
+//   console.log('Olá mundo!');
+// }, 5000);
+=======
 
 // const time = setInterval(function(){
 //   console.log(mostrarHora());
@@ -243,8 +257,22 @@ const produto2 = new Produto('Caneca', 50);
 
 // Exemplo de uso dos métodos
 
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598:aula2/script.js
 
 produto2.desconto(5);
 produto3.desconto(10);
 
+<<<<<<< HEAD:script.js
+function recursiva(max) {
+  if(max >= 10) return;
+
+  max++;
+
+console.log(max);
+recursiva(max);
+}
+
+recursiva(0)
+=======
 console.log(produto1, produto2, produto3);
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598:aula2/script.js

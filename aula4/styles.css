@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&family=Roboto:wght@500&display=swap');
 
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598
 * {
   border: none;
   box-sizing: border-box;
@@ -15,9 +18,16 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+<<<<<<< HEAD
+
+.constiner {
+  background: rgb(236, 230, 230);
+  width: 50%;
+=======
 .container {
 background: rgb(236, 230, 230);
   width: 500px;
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598
   height: auto;
   border-radius: 10px;
   color: black;
@@ -28,6 +38,16 @@ background: rgb(236, 230, 230);
 }
 
 .wrapper {
+<<<<<<< HEAD
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  height: auto;
+  gap: 0.2rem;
+}
+=======
   /* background: rgb(106, 102, 102); */
   display: flex;
   align-items: center;
@@ -45,10 +65,22 @@ background: rgb(236, 230, 230);
   
 }
 
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598
 .wrapper button {
   border: none;
   outline: none;
   color: white;
+<<<<<<< HEAD
+  background: rgb(236, 60, 7);
+  height: 45px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.wrapper input {
+  height: 50px;
+  width: 100%;
+=======
   background: rgb(231, 88, 45);
   font-size: 1.4rem;
   height: 45px;
@@ -67,11 +99,54 @@ background: rgb(236, 230, 230);
   width: 100%;
   text-align: right;
   font-size: 2rem;
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598
   border-radius: 5px;
   font-weight: 800;
   padding-left: 8px;
   border: none;
   outline: none;
+<<<<<<< HEAD
+  border: 2px solid rgb(236, 60, 7);
+ 
+}
+
+.resutado {
+  /* background:  rgb(247, 74, 6); */
+  color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  gap: 0.5rem;
+  overflow: auto;
+  height: 78%;
+  margin-top: 5px;
+}
+
+.resutado .box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+ 
+}
+
+@media (max-width: 700px) {
+  .constiner {
+    width: 97%;
+    height: 90vh;
+    margin-top: 3rem;
+    padding: 0.5rem;
+    gap: 2rem;
+  }
+}
+
+
+=======
   border: 2px solid rgb(50, 46, 45);
 }
 
@@ -97,3 +172,4 @@ background: rgb(236, 230, 230);
       }
   }
   
+>>>>>>> 4cf21ec6c6095c8dd23543c5b8b03ad15bb5d598
